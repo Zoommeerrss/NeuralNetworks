@@ -38,7 +38,7 @@ print("X: %s" %(X))
 w = np.array([1, 0.1, 0.2, 0.2])
 print("w: %s" %(w))
 
-# 1. # <a href="https://www.codecogs.com/eqnedit.php?latex=\Theta&space;(z)&space;=&space;\sum_{i&space;=&space;1}^{n}(X.W')&space;&plus;&space;bias" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Theta&space;(z)&space;=&space;\sum_{i&space;=&space;1}^{n}(X.W')&space;&plus;&space;bias" title="\Theta (z) = \sum_{i = 1}^{n}(X.W') + bias" /></a> = 5.7 for all of them, but pay attention, cuz the cone lines has different ways to get a matrix times vetor product!
+# 1. # <img src="https://latex.codecogs.com/gif.latex?\Theta&space;(z)&space;=&space;\sum_{i&space;=&space;1}^{n}(X.W')&space;&plus;&space;bias" title="\Theta (z) = \sum_{i = 1}^{n}(X.W') + bias" /> = 5.7 for all of them, but pay attention, cuz the cone lines has different ways to get a matrix times vetor product!
 zDXW = np.sum(np.dot(X, w[1:]) + w[0]) 
 print("z: %s" %(zDXW))
 
