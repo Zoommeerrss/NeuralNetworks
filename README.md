@@ -38,7 +38,7 @@ print("X: %s" %(X))
 w = np.array([1, 0.1, 0.2, 0.2])
 print("w: %s" %(w))
 
-# 1. # <img src="https://latex.codecogs.com/gif.latex?\Theta&space;(z)&space;=&space;\sum_{i&space;=&space;1}^{n}(X.W')&space;&plus;&space;bias" title="\Theta (z) = \sum_{i = 1}^{n}(X.W') + bias" /> = 5.7 for all of them, but pay attention, cuz the cone lines has different ways to get a matrix times vetor product!
+# 1. Theta(z)=sum_{i = 1}^{n}(X.W')+bias = 5.7 for all of them, but pay attention, cuz the cone lines has different ways to get a matrix times vetor product!
 zDXW = np.sum(np.dot(X, w[1:]) + w[0]) 
 print("z: %s" %(zDXW))
 
@@ -73,4 +73,4 @@ print("zf: %s" %(zITERADOR))
 
 Now, if you tried these code samples and could see how funny they are applying mathematics concepts envolving matrix times vector produtc you are ready to try the codes I'll pull here!
 
-Thank you for come!
+Thank you for comming!
