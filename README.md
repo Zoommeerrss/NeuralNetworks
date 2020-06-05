@@ -25,7 +25,7 @@ So, here you are some codes sample you will use frequently when codding using Py
 
 The code samples below will show you how to build a matrix, a vector and execute the matrix times vector technique:
 
-# ===================================================
+# =====
 import numpy as np
 
 
@@ -38,8 +38,7 @@ print("X: %s" %(X))
 w = np.array([1, 0.1, 0.2, 0.2])
 print("w: %s" %(w))
 
-# 1.
-# X' times w = 5.7 for all of them, but pay attention, cuz the cone lines has different ways to get a matrix times vetor product!
+# 1. # <a href="https://www.codecogs.com/eqnedit.php?latex=\Theta&space;(z)&space;=&space;\sum_{i&space;=&space;1}^{n}(X.W')&space;&plus;&space;bias" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Theta&space;(z)&space;=&space;\sum_{i&space;=&space;1}^{n}(X.W')&space;&plus;&space;bias" title="\Theta (z) = \sum_{i = 1}^{n}(X.W') + bias" /></a> = 5.7 for all of them, but pay attention, cuz the cone lines has different ways to get a matrix times vetor product!
 zDXW = np.sum(np.dot(X, w[1:]) + w[0]) 
 print("z: %s" %(zDXW))
 
@@ -51,17 +50,15 @@ print("zm: %s" %(zDWXT))
 zXDW =  np.sum(X.dot(w[1:]) + w[0]) 
 print("zt: %s" %(zXDW))
 
-# 4.
-# the output is a vector, but the sum of the vector elements is 5.7!
+# 4. the output is a vector, but the sum of the vector elements is 5.7!
 zWDXT =  w[1:].dot(X.T) + w[0] 
 print("ztm: %s" %(zWDXT))
 print("ztm soma: %s" %(np.sum(zWDXT)))
 
-# 5.
+# 5. the iteractive calculus uses ztemp to show the vector positions before the sum # but zf sums each iteration on ztemp field bringin 5.7 at the and similar the samples showed before!
 zITERADOR = 0
 
-# the iteractive calculus uses ztemp to show the vector positions before the sum
-# but zf sums each iteration on ztemp field bringin 5.7 at the and similar the samples showed before!
+
 for xi in zip(X):
     
     ztemp = np.dot(xi, w[1:]) + w[0]
@@ -72,7 +69,7 @@ for xi in zip(X):
 
 print("zf: %s" %(zITERADOR))
 
-# ===================================================
+# =====
 
 Now, if you tried these code samples and could see how funny they are applying mathematics concepts envolving matrix times vector produtc you are ready to try the codes I'll pull here!
 
