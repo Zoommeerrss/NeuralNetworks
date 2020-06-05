@@ -26,49 +26,50 @@ So, here you are some codes sample you will use frequently when codding using Py
 The code samples below will show you how to build a matrix, a vector and execute the matrix times vector technique:
 
 # =====
-import numpy as np
+
+    import numpy as np
 
 
 
 # matrix
-X = np.array([[1, 2, 3], [4, 5, 6]])
-print("X: %s" %(X))
+    X = np.array([[1, 2, 3], [4, 5, 6]])
+    print("X: %s" %(X))
 
 
 # weigth vector and bias
-w = np.array([1, 0.1, 0.2, 0.2])
-print("w: %s" %(w))
+    w = np.array([1, 0.1, 0.2, 0.2])
+    print("w: %s" %(w))
 
 # 1. Theta(z)=sum_{i = 1}^{n}(X.W')+bias = 5.7 for all of them, but pay attention, cuz the cone lines has different ways to get a matrix times vetor product!
-zDXW = np.sum(np.dot(X, w[1:]) + w[0]) 
-print("z: %s" %(zDXW))
+    zDXW = np.sum(np.dot(X, w[1:]) + w[0]) 
+    print("z: %s" %(zDXW))
 
 # 2.
-zDWXT = np.sum(np.dot(w[1:], X.T) + w[0]) 
-print("zm: %s" %(zDWXT))
+    zDWXT = np.sum(np.dot(w[1:], X.T) + w[0]) 
+    print("zm: %s" %(zDWXT))
 
 # 3.
-zXDW =  np.sum(X.dot(w[1:]) + w[0]) 
-print("zt: %s" %(zXDW))
+    zXDW =  np.sum(X.dot(w[1:]) + w[0]) 
+    print("zt: %s" %(zXDW))
 
 # 4. the output is a vector, but the sum of the vector elements is 5.7!
-zWDXT =  w[1:].dot(X.T) + w[0] 
-print("ztm: %s" %(zWDXT))
-print("ztm soma: %s" %(np.sum(zWDXT)))
+    zWDXT =  w[1:].dot(X.T) + w[0] 
+    print("ztm: %s" %(zWDXT))
+    print("ztm soma: %s" %(np.sum(zWDXT)))
 
 # 5. the iteractive calculus uses ztemp to show the vector positions before the sum # but zf sums each iteration on ztemp field bringin 5.7 at the and similar the samples showed before!
 zITERADOR = 0
 
 
-for xi in zip(X):
+    for xi in zip(X):
     
-    ztemp = np.dot(xi, w[1:]) + w[0]
-    zITERADOR += ztemp
-    print("xi: %s, w1 %s, w0 %s" %(xi, w[1:].T, w[0]))
-    print("loop ztemp: %s" %(ztemp))
-    print("loop zf: %s" %(zITERADOR))
+        ztemp = np.dot(xi, w[1:]) + w[0]
+        zITERADOR += ztemp
+        print("xi: %s, w1 %s, w0 %s" %(xi, w[1:].T, w[0]))
+        print("loop ztemp: %s" %(ztemp))
+        print("loop zf: %s" %(zITERADOR))
 
-print("zf: %s" %(zITERADOR))
+    print("zf: %s" %(zITERADOR))
 
 # =====
 
