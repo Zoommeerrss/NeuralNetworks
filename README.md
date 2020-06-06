@@ -29,14 +29,12 @@ The code samples below will show you how to build a matrix, a vector and execute
     # use numpy api to make it easy
     import numpy as np
 
-
-
     # matrix
     X = np.array([[1, 2, 3], [4, 5, 6]])
     print("X: %s" %(X))
 
 
-    # weigth vector and bias
+    # weight vector and bias
     w = np.array([1, 0.1, 0.2, 0.2])
     print("w: %s" %(w))
 
@@ -73,6 +71,6 @@ The code samples below will show you how to build a matrix, a vector and execute
 
 # =====
 
-Now, if you tried these code samples and could see how funny they are applying mathematics concepts envolving matrix times vector produtc you are ready to try the codes I'll pull here!
+Now, if you tried these code samples and could see how funny they are applying mathematics concepts envolving matrix times vector produtc you are ready to try the basic codes I'll pull here!
 
 Thank you for comming!
