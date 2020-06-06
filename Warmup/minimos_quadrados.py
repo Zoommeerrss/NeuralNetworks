@@ -2,7 +2,7 @@
 """
 Editor Spyder
 
-Este é um arquivo de script temporário.
+Calculo dos minimos quadrados.
 
 
 """
@@ -13,11 +13,11 @@ import matplotlib.pyplot as plt
 #%matplotlib inline
 
 
-# vetor Xzao
+# X vector 
 #X = 2 * np.random.rand(100, 1)
 X = np.array([1, 1, 2, 3, 4, 4, 4])
 
-# vetor y
+# y vector 
 #y = 4 + 3 * X + np.random.randn(100, 1)
 y = np.array([1, 4, 3, 1, 2, 3, 5])
 
