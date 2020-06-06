@@ -26,6 +26,22 @@ So, here you are some codes sample you will use frequently when codding using Py
 The code samples below will show you how to build a matrix, a vector and execute the matrix times vector technique:
 
 # =====
+
+    """
+    Created on Sat May 23 10:47:08 2020
+
+    @author: Zoommeerrss
+
+
+        Considere:
+        ----------
+
+            X = input matrix
+            w = weight vector, as:
+                - w[1:] vector without the zero position
+                - w[0] vector in the zero position as bias
+
+    """
     # use numpy api to make it easy
     import numpy as np
 
