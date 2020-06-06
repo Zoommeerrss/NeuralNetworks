@@ -13,11 +13,11 @@ import matplotlib.pyplot as plt
 #%matplotlib inline
 
 
-# X vector 
+# vetor Xzao
 #X = 2 * np.random.rand(100, 1)
 X = np.array([1, 1, 2, 3, 4, 4, 4])
 
-# y vector 
+# vetor y
 #y = 4 + 3 * X + np.random.randn(100, 1)
 y = np.array([1, 4, 3, 1, 2, 3, 5])
 
@@ -58,7 +58,7 @@ yFinal = theta_best[1] * X + theta_best[0]
 
 print("coeficientes: %s, %s" %(a, b))
 
-plt.plot(X, yFinal)
+plt.plot(X, yFinal, 'r')
 plt.scatter(X, y)
 plt.xlabel("$x$", fontsize=18)
 plt.ylabel("$y$", rotation=0, fontsize=18) 
