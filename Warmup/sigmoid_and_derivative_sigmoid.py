@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue May 12 15:27:52 2020
 
-@author: Emerzoom
 
-Sigmoid e Softmax
+@author: Zoommeerrss
+
+Sigmoid and Derivative
 
 
 """

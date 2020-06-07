@@ -1,8 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-Editor Spyder
 
-Calculo dos minimos quadrados.
+
+@author: Zoommeerrss
+
+
+Min Square Technique
+
 
 
 """
